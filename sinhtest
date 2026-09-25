@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fr(i,a,b) for(int i=a;i<=b;i++)
+
+const int NTEST = 150;
+
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+long long Rand(long long l, long long r)
+{
+    return uniform_int_distribution<long long>(l, r)(rng);
+}
+
+#define NAME ""
+
+int main()
+{
+    for(int test = 1; test <= NTEST; test++)
+    {
+        remove(NAME ".out");
+        remove("trau.out");
+
+        ofstream inp(NAME ".inp");
+    	
+        inp.close();
+
+
+        system(NAME ".exe");
+        system("trau.exe");
+
+        if(system(("fc /W " + string(NAME) + ".out trau.out > nul").c_str()) != 0)
+        {
+            cout << "WA TEST " << test << "\n";
+				
+            return 0;
+        }
+
+        cout << "AC TEST " << test << "\n"; 
+    }
+
+    return 0;
+}
