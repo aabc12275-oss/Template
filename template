@@ -1,0 +1,53 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fr(i,a,b) for(int i=a;i<=b;i++)
+#define frd(i,a,b) for(int i=b;i>=a;i--)
+#define ALL(A) A.begin(),A.end()
+#define Unique(A) sort(ALL(A)),A.erase(unique(ALL(A)),A.end())
+#define faster ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+#define fi first
+#define se second
+#define pb push_back
+#define lb lower_bound
+#define ub upper_bound
+#define bcnn(x,y) x*y/__gcd(x,y)
+#define task "test1"
+#define tct template<class T>
+tct bool mini(T &a, T b) {if(a > b) {a = b; return 1;} return 0;}
+tct bool maxi(T &a, T b) {if(a < b) {a = b; return 1;} return 0;}
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+//gp_hash_table<int, int> table;
+const ll N=1e6+5,INF=1e18,LOG=20,mod=1e9+7;
+
+
+void doc() {
+
+}
+
+bool check() {
+
+}
+
+void sub1() {
+
+
+}
+
+void subful() {
+
+
+}
+
+int main() {
+	faster
+
+	if (fopen(task".inp","r"))
+	{
+		freopen(task".inp","r",stdin);
+		freopen(task".out","w",stdout);
+	}
+
+	doc();sub1();
+}
